@@ -1,6 +1,11 @@
-* {
-    box-sizing: border-box;
+* {box-sizing: border-box;}
+    body{
+  font-size: 100%; 
+  font-family: 'Indie Flower', cursive;}
+  h1{ 
+font-family: 'Acme', sans-serif;
 }
+.row h1{text-align:center;}
 
 #header-nav {
     background-color:#757d80;
@@ -15,6 +20,8 @@
   padding-top:10px;
 }
 
+.navbar-nav{
+  margin:0 -15px !important;
 }
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar{
   border: 2px solid #000 !important;
@@ -44,13 +51,14 @@
     margin: 10px;
     background-color: #AAA5A5;
  font-family: 'Acme', sans-serif;
-    width:90%;
+    position:relative;
 }
 
 
 
 #nav-list {
     margin-top: 10px;
+    border:1px solid;
 }
 
 #nav-list a {
@@ -60,13 +68,55 @@
     font-weight: 100;
     background-color: #AAA5A5;
 }
-
-#nav-list a:hover {
-    background-color: #AEAE52;   
+#nav-list:nth-child(3){
+  border-bottom:0;
 }
-
-.navbar-default .navbar-collapse {
-	margin-top:0px;
-	border: 0px;
-	list-style-type: none;
-}  
+#nav-list li{
+  background:#fff;
+  border-bottom:2px solid;
+}
+#nav-list li:nth-child(3){
+  border-bottom:0;
+}
+.menu{
+  margin:15px; 
+}
+.main-title{
+  font-weight: bold;
+  margin-top: -3px;
+}
+.menu-content{ 
+  margin-top:40px;
+}
+.menu-title{
+  font-weight: bold;
+}
+.menu-item{
+  margin-bottom: 20px;
+  background:#999999;  
+  padding: 10px;
+}
+.menu-item h4 {
+  font-weight: bold;
+}
+.menu-item p{
+  font-weight:600;
+  font-size: .9em;
+  padding: 5px 10px;
+}
+@media (max-width:767px){
+  .navbar-brand:focus, .navbar-brand{
+    margin-left:10px;
+  }
+  .menu{
+    width: 80%;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom: 15px;
+  }
+  .menu-item p{
+    font-weight: 600;
+    font-size: 1em;
+    padding:5px 15px;
+  }
+}
