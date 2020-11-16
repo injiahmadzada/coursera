@@ -7,11 +7,11 @@
 var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 
   var greeting = "Hello ";
-  speak.speakHello = function () {
-    console.log(greeting + speak.names);
+ helloSpeaker.speakHello = function () {
+    console.log(greeting + helloSpeaker.names);
   }
 
-  window.speak = speak;
+  window.speak = helloSpeaker;
 
 })(window);
 }
