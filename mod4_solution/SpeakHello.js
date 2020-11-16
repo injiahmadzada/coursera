@@ -8,7 +8,7 @@ var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula"
 
   var greeting = "Hello ";
   speak.speakHello = function () {
-    console.log(greeting + speak.name);
+    console.log(greeting + speak.names);
   }
 
   window.speak = speak;
